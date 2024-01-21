@@ -1,0 +1,45 @@
+/* CSS file to implement style in 'Web page Loader.html' file. */
+
+#loader {
+    height: 200px;
+    width: 200px;
+    border: 20px solid gainsboro;
+    border-radius: 50%;
+    border-top-color: goldenrod;
+}
+
+h1,
+#loader {
+    margin: 10px auto;
+    text-align: center;
+}
+
+@keyframes borderAnimate {
+    0% {
+        border-top-color: #0f9d58;
+    }
+
+    25% {
+        border-top-color: gainsboro;
+        border-right-color: #4285f4;
+    }
+
+    50% {
+        border-right-color: gainsboro;
+        border-bottom-color: #db4437;
+    }
+
+    75% {
+        border-bottom-color: gainsboro;
+        border-left-color: #f4b400;
+    }
+
+    100% {
+        border-left-color: gainsboro;
+        border-top-color: #0f9d58;
+    }
+}
+
+#loader {
+    animation: borderAnimate 1.5s ease-in-out 0s 10 normal;
+}
